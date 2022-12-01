@@ -5,35 +5,33 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Расчет ламелей для Тет Лиды</title>
+   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
    <fieldset>
       <legend>Ширина карниза в см:</legend>
-      <!-- <label for="width-karniz"></label> -->
       <input id="width-karniz" type="text" placeholder="Введите ширину в см">
-   </fieldset>   
-
+   </fieldset>
    <fieldset>
       <legend>Тип сдвига ламелей:</legend>
-      <div>
+      <div class="radio-btn">
          <label>
          <input type="radio" name="lameli" value="1"> Вправо
          </label>
       </div>
-      <div>
+      <div class="radio-btn">
          <label>
          <input type="radio" name="lameli" value="1"> Влево
          </label>
       </div>
-      <div>
+      <div class="radio-btn">
          <label>
          <input type="radio" name="lameli" value="2"> От центра
          </label>         
       </div>
    </fieldset>
-
-   <button id="btn-result" type="submit" style="margin-top: 20px; margin-bottom: 20px;"> Рассчитать </button>
-   <div id="div-result" class="result"></div>
+   <button id="btn-result" type="submit" > Рассчитать </button>
+   <div id="div-result"></div>
    <script src="src/script.js"></script>
 </body>
 </html>
